@@ -1,4 +1,4 @@
-== BookMyRoom
+==BookMyRoom
 
 A room booking web application designed and developed using Ruby-on-Rails
 
