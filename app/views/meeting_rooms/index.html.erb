@@ -1,0 +1,35 @@
+<h1>Listing meeting_rooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Room name</th>
+      <th>Attendees</th>
+      <th>Booking from</th>
+      <th>Booking to</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meeting_rooms.each do |meeting_room| %>
+      <tr>
+        <td><%= meeting_room.room_name %></td>
+        <td><%= meeting_room.attendees %></td>
+        <td><%= meeting_room.booking_from %></td>
+        <td><%= meeting_room.booking_to %></td>
+        <td><%= meeting_room.user_id %></td>
+        <td><%= link_to 'Show', meeting_room %></td>
+        <td><%= link_to 'Edit', edit_meeting_room_path(meeting_room) %></td>
+        <td><%= link_to 'Destroy', meeting_room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Meeting room', new_meeting_room_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Room name:</strong>
+  <%= @meeting_room.room_name %>
+</p>
+
+<p>
+  <strong>Attendees:</strong>
+  <%= @meeting_room.attendees %>
+</p>
+
+<p>
+  <strong>Booking from:</strong>
+  <%= @meeting_room.booking_from %>
+</p>
+
+<p>
+  <strong>Booking to:</strong>
+  <%= @meeting_room.booking_to %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @meeting_room.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_meeting_room_path(@meeting_room) %> |
+<%= link_to 'Back', meeting_rooms_path %>
