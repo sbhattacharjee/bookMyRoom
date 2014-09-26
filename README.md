@@ -1,8 +1,8 @@
-==BookMyRoom
+# BookMyRoom
 
 A room booking web application designed and developed using Ruby-on-Rails
 
-==Disclamer & Legal Warning
+# Disclamer & Legal Warning
 
 This application has been used entirely for the purpose of learning Ruby-on-Rails.
 Use of this application should be strictly for the purpose of learning.
