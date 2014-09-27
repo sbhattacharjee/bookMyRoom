@@ -2,9 +2,6 @@ BookMyRoom::Application.routes.draw do
   get "bookmyroom/home"
   get "bookmyroom/contact"
   get "bookmyroom/room"
-  get "book_my_room/home"
-  get "book_my_room/contact"
-  get "book_my_room/room"
   resources :meeting_rooms
 
   resources :users
