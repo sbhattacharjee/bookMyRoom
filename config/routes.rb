@@ -1,7 +1,14 @@
 BookMyRoom::Application.routes.draw do
-  get "bookmyroom/home"
-  get "bookmyroom/contact"
-  get "bookmyroom/room"
+  get "users/new"
+  # get "bookmyroom/home"
+  # get "bookmyroom/contact"
+  # get "bookmyroom/room"
+
+  root 'bookmyroom#home'
+  match '/contact', to: 'bookmyroom#contact', via: 'get'
+  match '/room', to: 'bookmyroom#room', via: 'get'
+  match '/signup', to: 'users#new', via: 'get'
+
   resources :meeting_rooms
 
   resources :users
