@@ -9,4 +9,20 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BookMyRoom::Application.config.secret_key_base = '379a994a6cc2501148ada2d8fc4c659ea3996535d6bd0ad62fbd147884df41987aa72bd802813d99881c091d398693f71ef574d3eb043d1625858bfa04176d8c'
+
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+BookMyRoom::Application.config.secret_key_base = secure_token
