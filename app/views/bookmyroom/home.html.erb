@@ -8,7 +8,10 @@
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 
   <%= link_to "Available Rooms", room_path, class: "btn btn-large btn-primary" %>
+
+
+	<div class="right">
+		<h6>Powered by</h6>
+		<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+	</div>
 </div>
-
-Powered by <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
-
