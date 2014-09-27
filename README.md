@@ -2,6 +2,8 @@
 
 A room booking web application designed and developed using Ruby-on-Rails
 
+# Heroku URL: http://pure-tor-3486.herokuapp.com
+
 # Disclamer & Legal Warning
 
 This application has been developed and used entirely for the purpose of learning Ruby-on-Rails.
