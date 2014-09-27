@@ -1,0 +1,2 @@
+module BookmyroomHelper
+end
